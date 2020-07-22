@@ -1,3 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
+@import "assets/css/navbar";
 
-$primary: darken(#428bca, 20%);
+$primary: white;
+
+html{
+  height: 100%;
+}
+body {
+  background: linear-gradient(#000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1{
+  color: #131313;
+}
