@@ -3,7 +3,7 @@
 {% block title %}Experiences index{% endblock %}
 
 {% block body %}
-    <h1>Experiences index</h1>
+    <h1>Index des expériences</h1>
 
     <table class="table">
         <thead>
@@ -25,7 +25,8 @@
                 <td>{{ experience.degree }}</td>
                 <td>{{ experience.startDate ? experience.startDate|date('Y-m-d') : '' }}</td>
                 <td>{{ experience.endStart ? experience.endStart|date('Y-m-d') : '' }}</td>
-                <td>{{ experience.logo }}</td>
+                <td>
+                    <img class="w-25 p-3" src="{{ experience.logo }}" ></td>
                 <td>
                     <a href="{{ path('experiences_show', {'id': experience.id}) }}">show</a>
                     <a href="{{ path('experiences_edit', {'id': experience.id}) }}">edit</a>

@@ -17,6 +17,8 @@ class ExperiencesController extends AbstractController
 {
     /**
      * @Route("/", name="experiences_index", methods={"GET"})
+     * @param ExperiencesRepository $experiencesRepository
+     * @return Response
      */
     public function index(ExperiencesRepository $experiencesRepository): Response
     {

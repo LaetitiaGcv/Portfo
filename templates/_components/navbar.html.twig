@@ -1,22 +1,36 @@
-<ul class="nav justify-content-around flex-column vh-100">
+<ul class=" position-fixed nav justify-content-around flex-column vh-100">
     <div>
         <img src="{{ asset('build/images/Portrait.jpg') }}" class="portrait-nav" alt="logo">
     </div>
-    <li class="nav-item">
-        <a class="nav-link active" href="">Laetitia Gonçalves</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="#">À Propos</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="">Expériences</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="">Compétences</a>
-    </li><li class="nav-item">
-        <a class="nav-link active" href="">Projets</a>
-    </li>
-    </li><li class="nav-item">
-        <a class="nav-link active" href="">Me contacter</a>
-    </li>
+    {% if is_granted('ROLE_ADMIN') %}
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ path('experiences_index') }}"> Index des expériences</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ path('project_index') }}"> Index des projets</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ path('skills_index') }}"> Index des compétences</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="{{ path('app_logout') }}"> Deconnexion </a>
+        </li>
+    {% endif %}
+
+
+    <div class="nav-item">
+        <a class="nav-link active" href="/">À Propos</a>
+    </div>
+    <div>
+        <a class="nav-link active" href='#experiences'>Expériences</a>
+    </div>
+    <div>
+        <a class="nav-link active" href="#competences">Compétences</a>
+    </div>
+    <div>
+        <a class="nav-link active" href="#projets">Projets</a>
+    </div>
+    <div>
+        <a class="nav-link active" href="#me-contacter">Me contacter</a>
+    </div>
 </ul>

@@ -2,10 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <title>{% block title %}Portfolio{% endblock %}</title>
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
-        {% endblock %}}
+        {% endblock %}
     </head>
     <body>
     <div class="d-flex vh-100">
@@ -13,7 +16,9 @@
             {% include '_components/navbar.html.twig' %}
         </header>
         <main class="col-10">
-            {% block body %}{% endblock %}
+            {% block body %}
+            {% include 'content.html.twig' %}
+            {% endblock %}
         </main>
     </div>
     {% block javascripts %}{% endblock %}
