@@ -3,7 +3,7 @@
 
 
 
-html{
+html {
   height: 100%;
 }
 body {
@@ -12,3 +12,15 @@ body {
 h1{
   color: #131313;
 }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  height: 100%;
+
+}
+
