@@ -23,7 +23,7 @@
                 <td>{{ project.title }}</td>
                 <td>{{ project.description }}</td>
                 <td>{{ project.link }}</td>
-                <td>{{ project.picture }}</td>
+                <td><img class="w-25 p-3" src="{{ project.picture }}" ></td>
                 <td>
                     <a href="{{ path('project_show', {'id': project.id}) }}">show</a>
                     <a href="{{ path('project_edit', {'id': project.id}) }}">edit</a>

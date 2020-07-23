@@ -1,18 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "assets/css/navbar";
 
-
-
-html {
-  height: 100%;
-}
-body {
-  background-color: #fff;
-}
-h1{
-  color: #131313;
-}
-
 .card {
   display: flex;
   flex-direction: row;
@@ -24,3 +12,136 @@ h1{
 
 }
 
+body {
+  margin: 0;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+}
+
+h1, .h1 {
+  font-size: 6rem;
+}
+
+h2, .h2 {
+  font-size: 3.5rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #bd5d38;
+  border-color: #bd5d38;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #9f4e2f;
+  border-color: #964a2c;
+}
+
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-primary {
+  color: #bd5d38 !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+  color: #824027 !important;
+}
+
+
+.text-success {
+  color: #28a745 !important;
+}
+
+
+  body {
+    min-width: 992px !important;
+
+  }
+  .container {
+    min-width: 992px !important;
+  }
+
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6 !important;
+  }
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon:hover {
+  background-color: #bd5d38;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+section.resume-section .resume-section-content {
+  width: 100%;
+}
