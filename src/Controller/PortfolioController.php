@@ -36,7 +36,9 @@ class PortfolioController extends AbstractController
 
             $this->addFlash('success', 'Ton message a bien été envoyé');
 
+            return $this->redirect($request->getUri());
         }
+
 
         return $this->render('/home.html.twig', [
             'website' => 'Portfolio',

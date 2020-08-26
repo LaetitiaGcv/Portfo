@@ -1,7 +1,4 @@
-<ul class=" position-fixed nav justify-content-around flex-column vh-100">
-    <div>
-        <img src="{{ asset('build/images/Portrait.jpg') }}" class="portrait-nav justify-content-center" alt="logo">
-    </div>
+<ul class="nav justify-content-around flex-column vh-100 position-fixed">
     {% if is_granted('ROLE_ADMIN') %}
         <li class="nav-item">
             <a class="nav-link active" href="{{ path('experiences_index') }}"> Index des expériences</a>
@@ -17,20 +14,19 @@
         </li>
     {% endif %}
 
-
-    <div class="nav-item">
+    <li class="nav-item">
         <a class="nav-link active" href="/">À Propos</a>
-    </div>
-    <div>
-        <a class="nav-link active" href='#experiences'>Expériences</a>
-    </div>
-    <div>
-        <a class="nav-link active" href="#competences">Compétences</a>
-    </div>
-    <div>
-        <a class="nav-link active" href="#projets">Projets</a>
-    </div>
-    <div>
-        <a class="nav-link active" href="#me-contacter">Me contacter</a>
-    </div>
+    </li>
+    <li class="nav-item centernav">
+        <a class="nav-link active" id="experiences" href="#experiences">Expériences</a>
+    </li>
+    <li class="nav-item centernav">
+        <a class="nav-link active" id="competences" href="#competences">Compétences</a>
+    </li>
+    <li class="nav-item centernav">
+        <a class="nav-link active" id="projets" href="#projets"> Projets</a>
+    </li>
+    <li class="nav-item centernav">
+        <a class="nav-link active" id="me-contacter" href="#me-contacter"> Me contacter</a>
+    </li>
 </ul>

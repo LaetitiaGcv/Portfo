@@ -6,6 +6,10 @@ a{
   width: 150px;
   border-radius: 50%;
 }
+.centernav{
+  display: flex;
+  justify-content: center;
+}
 .nav{
   background-color: rgb(189, 93, 56);
 }
